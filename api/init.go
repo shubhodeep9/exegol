@@ -11,7 +11,7 @@ type Installer struct {
 	goExec string
 }
 
-func InitApi(uri, version string) error {
+func InitApi(uri, version, args string) error {
 	path, err := exec.LookPath("go")
 
 	if err != nil {
@@ -33,7 +33,7 @@ func InitApi(uri, version string) error {
 
 	installer.ExitCleanup(installedPath)
 
-	installer.RunPkg(installedPath)
+	installer.RunPkg(installedPath, args)
 
 	installer.PostCleanup(installedPath)
 
