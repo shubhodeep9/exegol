@@ -9,6 +9,9 @@ Go lang package runner, an `npx` implementation for `go`
 
 ```sh
 go get github.com/shubhodeep9/exegol
+
+// latest versions of go
+go install github.com/shubhodeep9/exegol@latest
 ```
 
 ## Usage
