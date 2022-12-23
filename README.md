@@ -18,9 +18,5 @@ go install github.com/shubhodeep9/exegol@latest
 
 > Ensure `$GOBIN` is set in `$PATH`
 ```sh
-exegol -uri package -v latest
+exegol -uri package -v latest -arg "-sample arg"
 ```
-
-## To-Do
-
-- [ ] Accept argument for the package to be passed ahead
